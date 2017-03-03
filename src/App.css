@@ -7,8 +7,29 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  position: relative;
+  height: 105px;
+  text-align: center;
+}
+
+.App-logo-egg {
+  z-index: 1;
+  animation: App-logo-wiggle infinite 20s linear;
+  height: 100px;
+}
+
+.App-logo-shadow {
+  z-index: 0;
+  animation: App-logo-shadow infinite 20s linear;
+  height: 5px;
+  top: 100px;
+}
+
+.App-logo-egg, .App-logo-shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .App-header {
@@ -16,8 +37,11 @@
   height: 150px;
   letter-spacing: 3px;
   padding: 20px 20px 0;
-  color: white;
-  margin: 0;
+  color: #f7f7f7;
+}
+
+.App-header h2 {
+  margin: 10px 0 0 0;
 }
 
 .App-footer {
@@ -36,7 +60,35 @@
   margin: 0 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes App-logo-wiggle {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(0deg); }
+  11% { transform: rotate(10deg); }
+  12% { transform: rotate(0deg); }
+  13% { transform: rotate(-10deg);}
+  14% { transform: rotate(0deg); }
+  29% { transform: translateY(0px); }
+  30% { transform: translateY(-10px); }
+  31% { transform: translateY(0px); }
+  32% { transform: translateY(-10px); }
+  33% { transform: translateY(0px); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes App-logo-shadow {
+  0% { transform: scale(1); };
+  10% { transform: scale(1); }
+  20% { transform: scale(1); }
+  29% { transform: scale(1); }
+  30% { transform: scale(0.5); }
+  31% { transform: scale(1); }
+  32% { transform: scale(0.5); }
+  33% { transform: scale(1); }
+  40% { transform: scale(1); }
+  50% { transform: scale(1); }
+  60% { transform: scale(1); }
+  70% { transform: scale(1); }
+  80% { transform: scale(1); }
+  90% { transform: scale(1); }
+  100% { transform: scale(1); }
 }

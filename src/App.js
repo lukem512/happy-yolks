@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import egg from './egg.svg';
+import shadow from './shadow.svg';
 import Search from './Search';
 import './App.css';
 
@@ -8,7 +9,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <div className="App-logo">
+            <img src={egg} className="App-logo-egg"
+              alt="This is Egbert, a happy egg." />
+            <img src={shadow} className="App-logo-shadow" alt="" />
+          </div>
           <h2>Happy Yolks</h2>
         </div>
         <div className="App-intro">

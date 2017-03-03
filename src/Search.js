@@ -20,8 +20,8 @@ class Search extends Component {
   }
 
   render() {
-    const {inputDescription, inputText, buttonDescription, buttonText,
-      buttonHandler, action} = this.props;
+    const {inputDescription, inputText, buttonDescription, buttonText}
+      = this.props;
     return (
       <div className="Search">
         <form className="SearchForm">

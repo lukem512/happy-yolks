@@ -11,7 +11,8 @@
   height: 40px;
   width: 60%;
   padding: 0 5px 0 5px;
-  color: grey;
+  color: rgba(0, 0, 0, 0.62);
+  background-color: #f7f7f7;
 }
 
 .selected {
@@ -21,9 +22,13 @@
 .SearchFormButton {
   border-radius: 0 3px 3px 0;
   border: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.62);
   height: 40px;
   width: 10%;
   min-width: 60px;
   font-weight: bold;
+  letter-spacing: 1px ;
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.62);
+  background-color: #fff300;
 }
