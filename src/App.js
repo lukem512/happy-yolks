@@ -17,7 +17,7 @@ class App extends Component {
           <h2>Happy Yolks</h2>
         </div>
         <div className="App-intro">
-          Search for an egg seller or an individual farm by typing the name on
+          Search for an egg seller or an individual farm by typing the name in
           the box below. You can also search using the codes on the eggs.
         </div>
         <Search inputText="Search for 'Happy Eggs'?"
