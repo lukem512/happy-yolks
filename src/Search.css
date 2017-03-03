@@ -1,7 +1,11 @@
 .Search {
-  width: 70%;
+  width: 70vw;
   margin: 0 auto;
   text-align: center;
+}
+
+.SearchForm {
+  margin-bottom: 15px;
 }
 
 .SearchFormInput {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import egg from './egg.svg';
-import shadow from './shadow.svg';
 import Search from './Search';
 import './App.css';
+import Egg from './egg.svg';
+import Shadow from './shadow.svg';
 
 class App extends Component {
   render() {
@@ -10,9 +10,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <div className="App-logo">
-            <img src={egg} className="App-logo-egg"
+            <img src={Egg} className="App-logo-egg"
               alt="This is Egbert, a happy egg." />
-            <img src={shadow} className="App-logo-shadow" alt="" />
+            <img src={Shadow} className="App-logo-shadow" alt="" />
           </div>
           <h2>Happy Yolks</h2>
         </div>

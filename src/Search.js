@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SearchResults from './SearchResults';
 import './Search.css';
 
 class Search extends Component {
@@ -38,6 +39,7 @@ class Search extends Component {
             {buttonText || 'Click'}
           </button>
         </form>
+        <SearchResults farm={{name: 'Luke\'s Farm', rating: 3}} width='70vw' />
       </div>
     );
   }

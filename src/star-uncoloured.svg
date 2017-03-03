@@ -1,0 +1,15 @@
+<svg width="43px" height="43px" viewBox="276 176 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="297.5 210.039427 284.862617 214.893865 285.574296 201.374896 277.052285 190.856135 290.12951 187.35539 297.5 176 304.87049 187.35539 317.947715 190.856135 309.425704 201.374896 310.137383 214.893865"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feOffset dx="-1" dy="-1" in="shadowSpreadInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.19 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Star-(uncoloured)" stroke="none" fill="none">
+        <use fill="#F7F7F7" fill-rule="evenodd" xlink:href="#path-1"></use>
+        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+.Search-Results {
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  min-height: 150px;
+  padding: 5px;
+}
+
+.Star {
+  width: 35px;
+}
