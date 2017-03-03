@@ -1,6 +1,7 @@
 {
   "name": "happy-yolks-web",
   "version": "0.1.0",
+  "homepage": "http://lukem512.github.io/happy-yolks",
   "private": true,
   "devDependencies": {
     "react-scripts": "0.9.0"
