@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {C} from './parser';
+
 import './SearchResults.css';
 import Star from './star-coloured.svg';
 import NoStar from './star-uncoloured.svg';
@@ -15,7 +17,7 @@ class SearchResults extends Component {
       {[...Array(rating)].map((e, i) =>
         <img className="Star Star-Filled" src={Star} key={'star-' + i} alt="" />
       )}
-      {[...Array(5 - rating)].map((e, i) =>
+      {[...Array(C.MAX_STARS - rating)].map((e, i) =>
         <img className="Star" src={NoStar} key={'nostar-' + i} alt="" />
       )}
     </div>);
@@ -26,7 +28,8 @@ class SearchResults extends Component {
     const {name, image, rating} = farm;
     return (
       <div className="Search-Results" style={{width}}>
-        <h1 className="Farm-Name">{name}</h1>
+        {name &&
+          <h1 className="Farm-Name">{name}</h1>}
         {image &&
           <img className="Farm-Image" src={image} alt={name} />}
         {rating && this.renderRating()}

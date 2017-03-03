@@ -1,6 +1,6 @@
 .Search-Results {
   border-radius: 3px;
-  background-color: #f7f7f7;
+  /*background-color: #f7f7f7;*/
   min-height: 150px;
   padding: 5px;
   margin: 0 auto;
@@ -8,4 +8,10 @@
 
 .Star {
   width: 35px;
+  animation: Star-appear 1 1s linear;
+}
+
+@keyframes Star-appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
