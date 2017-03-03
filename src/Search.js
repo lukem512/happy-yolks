@@ -39,7 +39,7 @@ class Search extends Component {
             {buttonText || 'Click'}
           </button>
         </form>
-        <SearchResults farm={{name: 'Luke\'s Farm', rating: 3}} width='70vw' />
+        <SearchResults farm={{name: 'Luke\'s Farm', rating: 3}} width='70%' />
       </div>
     );
   }
