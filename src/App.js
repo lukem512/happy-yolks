@@ -28,12 +28,12 @@ class App extends Component {
           <h2>Happy Yolks</h2>
         </div>
         <div className="App-intro">
-          Search for an egg seller or an individual farm by typing the name in
-          the box below. You can also search using the codes on the eggs.
+          How happy are the chickens that laid your eggs? Type the codes on
+          your eggs to find out.
         </div>
         <div className="App-search">
-        <Search inputText="Search for 'Happy Eggs'?"
-          inputDescription="Enter an egg seller or a code (i.e. 1-UK-54321)"
+        <Search inputText="Search for '1-UK-54321'?"
+          inputDescription="Enter an egg code (i.e. 1-UK-54321)."
           buttonText="Search"
           buttonHandler={(e, value) => this.handleSearch(e, value, this)} />
         </div>
@@ -41,9 +41,6 @@ class App extends Component {
           <p className="Error">No results found.</p>}
         {results &&
           <SearchResults farm={results} width='70%' />}
-        <div className="App-footer">
-          <p>Created by Luke Mitchell, 2017.</p>
-        </div>
       </div>
     );
   }
