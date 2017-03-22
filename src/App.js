@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Search from './Search';
 import SearchResults from './SearchResults';
+import EggFact from './EggFact';
 import parser from './parser';
 
 import './App.css';
@@ -32,15 +33,16 @@ class App extends Component {
           your eggs to find out.
         </div>
         <div className="App-search">
-        <Search inputText="Search for '1-UK-54321'?"
-          inputDescription="Enter an egg code (i.e. 1-UK-54321)."
-          buttonText="Search"
-          buttonHandler={(e, value) => this.handleSearch(e, value, this)} />
+          <Search inputText="Search for '1-UK-54321'?"
+            inputDescription="Enter an egg code (i.e. 1-UK-54321)."
+            buttonText="Search"
+            buttonHandler={(e, value) => this.handleSearch(e, value, this)} />
         </div>
         {clicked && !results &&
           <p className="Error">No results found.</p>}
         {results &&
           <SearchResults farm={results} width='70%' />}
+          <EggFact />
       </div>
     );
   }
