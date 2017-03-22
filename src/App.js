@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Search from './Search';
 import SearchResults from './SearchResults';
+import TopFarm from './TopFarm';
 import parser from './parser';
 
 import './App.css';
@@ -41,6 +42,7 @@ class App extends Component {
           <p className="Error">No results found.</p>}
         {results &&
           <SearchResults farm={results} width='70%' />}
+        <TopFarm />
       </div>
     );
   }
