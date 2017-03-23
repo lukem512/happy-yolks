@@ -21,13 +21,19 @@ class TopFarm extends Component {
     const {name, image, description} = farm;
     return (
       <div className="Top-Farm">
-        <h2>Our top farm:</h2>
-        {name &&
-          <h1 className="Farm-Name">{name}</h1>}
-        {image &&
-          <img className="Farm-Image" src={image} alt={name} />}
-        {description &&
-        <p>{description}</p>}
+        <div className="Top-Farm-Header">
+          <h3>Our top farm:</h3>
+        </div>
+        <div className="Top-Farm-Main">
+          {name &&
+            <h2 className="Farm-Name">{name}</h2>}
+          {image &&
+            <div className="Image-Container">
+              <img className="Farm-Image" src={image} alt={name} />
+            </div>}
+          {description &&
+          <p>{description}</p>}
+        </div>
       </div>
     );
   }

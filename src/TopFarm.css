@@ -1,0 +1,58 @@
+.Top-Farm {
+  width: 70%;
+  text-align: center;
+  letter-spacing: 1px ;
+  margin: 0 auto;
+}
+
+.Top-Farm-Header {
+  background-color: #444;
+  border-radius: 3px;
+  /*border: 1px solid black;*/
+  margin: 0;
+  padding: 0;
+}
+
+.Top-Farm-Header h3 {
+  color: white;
+  text-align: left;
+  margin: 0 0 0 10px;
+  line-height: 40px;
+}
+
+.Top-Farm-Main {
+  border-radius: 3px;
+  /*border: 1px solid black;*/
+  color: rgba(0, 0, 0, 0.62);
+  background-color: #fff300;
+  padding: 5px;
+  margin-top: 5px;
+  overflow: auto;
+}
+
+.Top-Farm-Main h2 {
+  margin: 0 0 10px 0;
+  line-height: 40px;
+}
+
+.Top-Farm-Main p {
+  margin: 0 10px 10px 10px;
+  position: relative;
+}
+.Top-Farm-Main .Image-Container {
+    height: 150px;
+    width: 150px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    z-index: 1000;
+    margin: 0 10px 10px 10px;
+}
+
+.Top-Farm-Main .Image-Container .Farm-Image {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    height: 100%;
+}
