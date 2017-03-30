@@ -17,6 +17,17 @@ class EggFact extends Component {
     const {factNumber} = this.state;
     return (
       <div className="Egg-Fact">
+        <div className="Egg-Fact-Header">
+          <h1>Egg fact #{factNumber}:</h1>
+        </div>
+        <div className="Egg-Fact-Main">
+          <p>{eggFacts[factNumber - 1]}</p>
+          {description &&
+          <p>{description}</p>}
+        </div>
+      </div>
+
+      <div className="Egg-Fact">
         <h1>Egg fact #{factNumber}:</h1>
         <p>{eggFacts[factNumber - 1]}</p>
       </div>
